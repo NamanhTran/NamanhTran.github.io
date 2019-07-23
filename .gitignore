@@ -1,0 +1,8 @@
+# Ignore everything that isn't related to my page
+*
+
+# Except
+!.gitignore
+!index.html
+!portfolio.js
+!style.css

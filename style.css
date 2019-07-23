@@ -15,6 +15,11 @@
   margin: 0px;
   background-color: #F1F4F6; }
 
+.line {
+  display: inline-block;
+  border-bottom: 1px solid #28292A;
+  line-height: 0; }
+
 .center {
   position: absolute;
   width: 300px;
