@@ -1,7 +1,7 @@
 function removeConstructionAlert() {
-    let state = document.getElementById("constructionAlert").hidden;
-    if (state == false)
-        document.getElementById("constructionAlert").hidden= true;
+    let state = alert = document.getElementById("constructionAlert").style.display;
+    if (state == "block")
+        document.getElementById("constructionAlert").style.display = "none";
         
     console.log(state);
 }

@@ -53,17 +53,16 @@
   padding: 8px; }
 
 .delay1 {
-  animation-delay: .35s; }
+  animation-delay: .55s; }
 
 /*
 .delay2 {
     animation-delay: .45s;
 }
-
-.delay3 {
-    animation-delay: .65s;
-}
 */
+.delay3 {
+  animation-delay: .85s; }
+
 #contact {
   background: transparent;
   margin-top: 12px; }
