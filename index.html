@@ -10,57 +10,111 @@
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/17078e9fc4.js"></script>
 
     <title>Namanh Tran</title>
   </head>
   <body>
+    <!--TODO Alert-->
+    <div id="constructionAlert" class="alert alert-info alert-dismissible fade show" role="alert" style="text-align: center; display: none; margin-bottom: 0px;">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="background: transparent;" onclick="removeConstructionAlert()">
+          <span aria-hidden="true" style="background: transparent;">&times;</span>
+      </button>
+      <strong style="background: transparent">
+      About Me, Projects and Contact Me sections are currently under development!
+      <br>
+      Check back again soon!
+      </strong>
+    </div>
     <section id="page1">
-
-      <!--TODO Alert-->
-      <div id="constructionAlert" class="alert alert-info alert-dismissible fade show" role="alert" style="text-align: center; display: none;">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="background: transparent;" onclick="removeConstructionAlert()">
-            <span aria-hidden="true" style="background: transparent;">&times;</span>
-        </button>
-        <strong style="background: transparent">
-        About Me, Projects and Contact Me sections are currently under development! 
-        <br>
-        Check back again soon!
-        </strong>
-      </div>
-
       <!--Splash page-->
-      <div class="splash-page center">
+      <div class="splash-page">
         <!--Greeting-->
         <div class="greeting fadeInAnimated delay1">
             Hey there!
             <br>
             My name is Namanh Tran!
         </div>
-        
+
         <!--Information bar-->
-        <div class="info fadeInAnimated delay1"> 
-            <span class="line" style="width:25px;">&nbsp;</span>
-            <button class="button" onclick="todoAlert()">&nbsp;About Me&nbsp;</button>
-            <span class="line" style="width:25px;">&nbsp;</span>
-            <button class="button" onclick="todoAlert()">&nbsp;Projects&nbsp;</button>
-            <span class="line" style="width:25px;">&nbsp;</span>
-            <button class="button" onclick="todoAlert()">&nbsp;Contact Info&nbsp;</button>
-            <span class="line" style="width:25px;">&nbsp;</span>
+        <div class="info fadeInAnimated delay1">
+          <span class="line">&nbsp;</span>
+          <button class="button" onclick="todoAlert()">&nbsp;About Me&nbsp;</button>
+          <span class="line">&nbsp;</span>
+          <button class="button" onclick="todoAlert()">&nbsp;Projects&nbsp;</button>
+          <span class="line">&nbsp;</span>
+          <button class="button" onclick="todoAlert()">&nbsp;Contact&nbsp;</button>
+          <span class="line">&nbsp;</span>
         </div>
 
         <!--Contact Logos-->
-        <div id="contact" class="fadeInAnimated delay3" style="display: block;">
-            <a href="https://www.github.com/NamanhTran" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/namanh-tran/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://twitter.com/deNamanhAtor" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/namanh_trann/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="contact fadeInAnimated delay3">
+          <a href="https://www.github.com/NamanhTran" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/namanh-tran/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/deNamanhAtor" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/namanh_trann/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
+
+        <svg
+          class="splash-blob fadeInAnimated delay1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 300 300"
+          width="100%">
+          <path id="blob" fill="rgb(207, 216, 209)">
+            <animate
+              attributeName="d"
+              dur="25000ms"
+              repeatCount="indefinite"
+              values="
+                M 440.5,320.5
+                  Q 418,391,355.5,442.5
+                  Q 293,494,226,450.5
+                  Q 159,407,99,367
+                  Q 39,327,31.5,247.5
+                  Q 24,168,89,125.5
+                  Q 154,83,219.5,68
+                  Q 285,53,335.5,94.5
+                  Q 386,136,424.5,193
+                  Q 463,250,440.5,320.5Z;
+
+                M 453.78747,319.98894
+                  Q 416.97789,389.97789,353.96683,436.87838
+                  Q 290.95577,483.77887,223.95577,447.43366
+                  Q 156.95577,411.08845,105.64373,365.97789
+                  Q 54.33169,320.86732,62.67444,252.61056
+                  Q 71.01719,184.3538,113.01965,135.21007
+                  Q 155.02211,86.06634,220.52211,66.46683
+                  Q 286.02211,46.86732,335.5,91.94472
+                  Q 384.97789,137.02211,437.78747,193.51106
+                  Q 490.59704,250,453.78747,319.98894Z;
+
+                M 411.39826,313.90633
+                  Q 402.59677,377.81265,342.92059,407.63957
+                  Q 283.24442,437.46649,215.13648,432.5428
+                  Q 147.02853,427.61911,82.23325,380.9572
+                  Q 17.43796,334.29529,20.45223,250.83809
+                  Q 23.46649,167.38089,82.5856,115.05707
+                  Q 141.70471,62.73325,212.19045,63.73015
+                  Q 282.67618,64.72705,352.67308,84.79839
+                  Q 422.66998,104.86972,421.43486,177.43486
+                  Q 420.19974,250,411.39826,313.90633Z;
+
+                M 440.5,320.5
+                  Q 418,391,355.5,442.5
+                  Q 293,494,226,450.5
+                  Q 159,407,99,367
+                  Q 39,327,31.5,247.5
+                  Q 24,168,89,125.5
+                  Q 154,83,219.5,68
+                  Q 285,53,335.5,94.5
+                  Q 386,136,424.5,193
+                  Q 463,250,440.5,320.5Z;" />
+          </path>
+        </svg>
       </div>
     </section>
-      
       <!-- Removed multi page app and complete restructuring in progress
       <section id="page2">
           About Me
@@ -75,5 +129,5 @@
       </section>
       -->
   </body>
-  <script src="portfolio.js"></script> 
+  <script src="portfolio.js"></script>
 </html>
