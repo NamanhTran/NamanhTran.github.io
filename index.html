@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!--Stylesheet-->
-        <link href="style.css" type="text/css" rel="stylesheet">
+    <!--Stylesheet-->
+    <link href="style.css" type="text/css" rel="stylesheet">
 
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/17078e9fc4.js"></script>
+
+    <title>Namanh Tran</title>
+  </head>
+  <body>
+    <section id="page1">
+
+      <!--TODO Alert-->
+      <div id="constructionAlert" class="alert alert-info alert-dismissible fade show" role="alert" style="text-align: center; display: none;">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="background: transparent;" onclick="removeConstructionAlert()">
+            <span aria-hidden="true" style="background: transparent;">&times;</span>
+        </button>
+        <strong style="background: transparent">
+        About Me, Projects and Contact Me sections are currently under development! 
+        <br>
+        Check back again soon!
+        </strong>
+      </div>
+
+      <!--Splash page-->
+      <div class="splash-page center">
+        <!--Greeting-->
+        <div class="greeting fadeInAnimated delay1">
+            Hey there!
+            <br>
+            My name is Namanh Tran!
+        </div>
         
-        <!--FontAwesome-->
-        <script src="https://kit.fontawesome.com/17078e9fc4.js"></script>
+        <!--Information bar-->
+        <div class="info fadeInAnimated delay1"> 
+            <span class="line" style="width:25px;">&nbsp;</span>
+            <button class="button" onclick="todoAlert()">&nbsp;About Me&nbsp;</button>
+            <span class="line" style="width:25px;">&nbsp;</span>
+            <button class="button" onclick="todoAlert()">&nbsp;Projects&nbsp;</button>
+            <span class="line" style="width:25px;">&nbsp;</span>
+            <button class="button" onclick="todoAlert()">&nbsp;Contact Info&nbsp;</button>
+            <span class="line" style="width:25px;">&nbsp;</span>
+        </div>
 
-        <title>namanh</title>
-    </head>
-    <body>
-        
-        <section id="page1">
+        <!--Contact Logos-->
+        <div id="contact" class="fadeInAnimated delay3" style="display: block;">
+            <a href="https://www.github.com/NamanhTran" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/namanh-tran/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/deNamanhAtor" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/namanh_trann/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+      
+      <!-- Removed multi page app and complete restructuring in progress
+      <section id="page2">
+          About Me
+      </section>
 
-            <!--TODO Alert-->
-            <div id="constructionAlert" class="alert alert-info alert-dismissible fade show" role="alert" style="text-align: center; display: none;">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="background: transparent;" onclick="removeConstructionAlert()">
-                    <span aria-hidden="true" style="background: transparent;">&times;</span>
-                </button>
-                <strong style="background: transparent">
-                About Me, Projects and Contact Me sections are currently under development! 
-                <br>
-                Check back again soon!
-                </strong>
-            </div>
+      <section id="page3">
+          Projects
+      </section>
 
-            <!--Splash page-->
-            <div class="splash-page center">
-
-                <!--Greeting-->
-                <div class="greeting fadeInAnimated delay1">
-                    Hey there!
-                    <br>
-                    My name is Namanh Tran!
-                </div>
-                
-                <!--Information bar-->
-                <div class="info fadeInAnimated delay1"> 
-                    <span class="line" style="width:25px;">&nbsp;</span>
-                    <button class="button" onclick="todoAlert()">&nbsp;About Me&nbsp;</button>
-                    <span class="line" style="width:25px;">&nbsp;</span>
-                    <button class="button" onclick="todoAlert()">&nbsp;Projects&nbsp;</button>
-                    <span class="line" style="width:25px;">&nbsp;</span>
-                    <button class="button" onclick="todoAlert()">&nbsp;Contact Info&nbsp;</button>
-                    <span class="line" style="width:25px;">&nbsp;</span>
-                </div>
-
-                <!--Contact Logos-->
-                <div id="contact" class="fadeInAnimated delay3" style="display: block;">
-                    <a href="https://www.github.com/NamanhTran" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/namanh-tran/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/deNamanhAtor" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/namanh_trann/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Removed multi page app and complete restructuring in progress
-        <section id="page2">
-            About Me
-        </section>
-
-        <section id="page3">
-            Projects
-        </section>
-
-        <section id="page4">
-            Contact
-        </section>
-        -->
-    </body>
-    <script src="portfolio.js"></script> 
+      <section id="page4">
+          Contact
+      </section>
+      -->
+  </body>
+  <script src="portfolio.js"></script> 
 </html>
